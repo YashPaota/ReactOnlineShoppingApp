@@ -13,6 +13,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="https://yashpaota.github.io/ReactOnlineShoppingApp/" element={<Home />} />
           <Route path="/products" element={<ProductList/>} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
