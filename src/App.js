@@ -5,7 +5,7 @@ import Login from "./Pages/Login";
 import ProductList from "./Pages/ProductList";
 import Register from "./Pages/Register";
 import {BrowserRouter as Router , Routes , Route} from "react-router-dom";
-// import Error from "./Pages/Error";
+import Error from "./Pages/Error";
 
 const App = () => {
     return (
@@ -13,12 +13,12 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route exact path="https://yashpaota.github.io/ReactOnlineShoppingApp" element={<Home />} /> */}
+          <Route path="/ReactOnlineShoppingApp" element={<Home />} />
           <Route path="/products" element={<ProductList/>} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
-          {/* <Route path="*" element={<Error />} /> */}
+          <Route path="*" element={<Error />} />
        </Routes>
       </Router>
       );
